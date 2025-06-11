@@ -7,7 +7,7 @@
     --font-playfair: "Playfair Display", serif;
 }
 
-#hero {
+#hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/photos/hero-image.jpg);
     background-size: cover;
     background-position: center center;
