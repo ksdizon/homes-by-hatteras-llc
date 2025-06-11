@@ -17,65 +17,7 @@
     
     <script type="module" src="src/main.ts"></script>
     <script>
-      class TestimonialCarousel {
-        constructor() {
-          this.currentSlide = 0;
-          this.totalSlides = 5;
-          this.track = document.getElementById('carouselTrack');
-          this.dots = document.querySelectorAll('.dot');
-          
-          this.init();
-        }
-        
-        init() {
-          // Next/Prev button event listeners
-          document.getElementById('nextBtn').addEventListener('click', () => this.nextSlide());
-          document.getElementById('prevBtn').addEventListener('click', () => this.prevSlide());
-          
-          // Dot navigation
-          this.dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => this.goToSlide(index));
-          });
-          
-          // Auto-advance every 6 seconds
-          setInterval(() => this.nextSlide(), 6000);
-        }
-        
-        updateCarousel() {
-          const translateX = -this.currentSlide * 20; // 20% per slide
-          this.track.style.transform = `translateX(${translateX}%)`;
-          
-          this.dots.forEach((dot, index) => {
-            if (index === this.currentSlide) {
-              dot.classList.remove('bg-gray-300');
-              dot.classList.add('bg-amber-400');
-            } else {
-              dot.classList.remove('bg-amber-400');
-              dot.classList.add('bg-gray-300');
-            }
-          });
-        }
-        
-        nextSlide() {
-          this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-          this.updateCarousel();
-        }
-        
-        prevSlide() {
-          this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-          this.updateCarousel();
-        }
-        
-        goToSlide(slideIndex) {
-          this.currentSlide = slideIndex;
-          this.updateCarousel();
-        }
-      }
       
-      // Initialize carousel when DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-        new TestimonialCarousel();
-      });
     </script>
   </body>
 </html>

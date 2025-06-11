@@ -9,11 +9,11 @@ export function loadTestimonials() {
         Don't just take our word for it - hear from the families who have found their dream homes with us.
       </p>
       
-      <!-- Carousel Container -->
-      <div class="carousel-container relative max-w-4xl mx-auto">
-        <div class="carousel-track" id="carouselTrack">
+      <!-- Swiper Container -->
+      <div class="swiper testimonial-swiper max-w-4xl mx-auto">
+        <div class="swiper-wrapper">
           <!-- Testimonial 1 -->
-          <div class="carousel-slide">
+          <div class="swiper-slide">
             <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center mx-4">
               <div class="flex justify-center mb-4">
                 <div class="flex text-amber-400">
@@ -34,7 +34,7 @@ export function loadTestimonials() {
           </div>
           
           <!-- Testimonial 2 -->
-          <div class="carousel-slide">
+          <div class="swiper-slide">
             <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center mx-4">
               <div class="flex justify-center mb-4">
                 <div class="flex text-amber-400">
@@ -55,7 +55,7 @@ export function loadTestimonials() {
           </div>
           
           <!-- Testimonial 3 -->
-          <div class="carousel-slide">
+          <div class="swiper-slide">
             <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center mx-4">
               <div class="flex justify-center mb-4">
                 <div class="flex text-amber-400">
@@ -76,7 +76,7 @@ export function loadTestimonials() {
           </div>
           
           <!-- Testimonial 4 -->
-          <div class="carousel-slide">
+          <div class="swiper-slide">
             <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center mx-4">
               <div class="flex justify-center mb-4">
                 <div class="flex text-amber-400">
@@ -97,7 +97,7 @@ export function loadTestimonials() {
           </div>
           
           <!-- Testimonial 5 -->
-          <div class="carousel-slide">
+          <div class="swiper-slide">
             <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center mx-4">
               <div class="flex justify-center mb-4">
                 <div class="flex text-amber-400">
@@ -119,27 +119,52 @@ export function loadTestimonials() {
         </div>
         
         <!-- Navigation Buttons -->
-        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-50 border border-gray-200 rounded-full p-3 shadow-md transition-all duration-200 hover:shadow-lg z-10">
-          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
-        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-50 border border-gray-200 rounded-full p-3 shadow-md transition-all duration-200 hover:shadow-lg z-10">
-          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
+        <div class="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-50 border border-gray-200 rounded-full p-3 shadow-md transition-all duration-200 hover:shadow-lg z-10 w-12 h-12 flex items-center justify-center cursor-pointer"></div>
+        <div class="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-50 border border-gray-200 rounded-full p-3 shadow-md transition-all duration-200 hover:shadow-lg z-10 w-12 h-12 flex items-center justify-center cursor-pointer"></div>
         
-        <!-- Dots Indicator -->
-        <div class="flex justify-center mt-8 gap-2">
-          <button class="dot w-3 h-3 rounded-full bg-amber-400 transition-all duration-200" data-slide="0"></button>
-          <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-200" data-slide="1"></button>
-          <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-200" data-slide="2"></button>
-          <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-200" data-slide="3"></button>
-          <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-200" data-slide="4"></button>
-        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-8 text-center"></div>
       </div>
     </div>
   </section>
+  
+  <style>
+    /* Core Swiper functionality */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      box-sizing: content-box;
+    }
+    
+    .swiper-slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+    }
+    
+    /* Custom arrows using Unicode */
+    .testimonial-swiper .swiper-button-next::after {
+      content: '→';
+      font-size: 20px;
+      color: #374151;
+    }
+    
+    .testimonial-swiper .swiper-button-prev::after {
+      content: '←';
+      font-size: 20px;
+      color: #374151;
+    }
+  </style>
   `
 }
