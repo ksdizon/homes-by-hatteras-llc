@@ -8,7 +8,7 @@
 }
 
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/public/photos/hero-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/photos/hero-image.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -23,4 +23,21 @@
 
 .text-shadow-soft {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* testimonial carousell*/
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 500%;
+}
+
+.carousel-slide {
+    width: 20%;
+    flex-shrink: 0;
 }
