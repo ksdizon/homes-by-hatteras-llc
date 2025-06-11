@@ -27,18 +27,14 @@
 }
 
 /* testimonial carousell*/
-.carousel-container {
-    position: relative;
-    overflow: hidden;
+.testimonial-swiper .swiper-button-next::after {
+    content: '→';
+    font-size: 20px;
+    color: #374151;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 500%;
-}
-
-.carousel-slide {
-    width: 20%;
-    flex-shrink: 0;
+.testimonial-swiper .swiper-button-prev::after {
+    content: '←';
+    font-size: 20px;
+    color: #374151;
 }
