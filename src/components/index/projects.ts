@@ -10,13 +10,13 @@ export function loadProjects() {
       </p>
       <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 place-items-center">
         <div class="h-96 w-full max-w-96 bg-gray-300 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-          <img src="public/photos/addison-1.jpg" class="w-full h-full object-cover rounded-xl">
+          <img src="/photos/addison-1.jpg" class="w-full h-full object-cover rounded-xl">
         </div>
         <div class="h-96 w-full max-w-96 bg-gray-300 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-          <img src="public/photos/addison-2.jpg" class="w-full h-full object-cover rounded-xl">
+          <img src="/photos/addison-2.jpg" class="w-full h-full object-cover rounded-xl">
         </div>
         <div class="h-96 w-full max-w-96 bg-gray-300 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-          <img src="public/photos/example-.jpg" class="w-full h-full object-cover rounded-xl">
+          <img src="/photos/example-.jpg" class="w-full h-full object-cover rounded-xl">
         </div>
       </div>
       <div class="pt-10 text-center">
