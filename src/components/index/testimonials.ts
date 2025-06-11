@@ -2,15 +2,15 @@ export function loadTestimonials() {
   document.querySelector("#testimonials")!.innerHTML = `
   <section id="testimonials-section" class="h-full bg-white py-20 px-6">
     <div class="max-w-7xl mx-auto p-8 pb-10 bg-gray-50 rounded-xl shadow-lg">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">
+      <h1 class="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-center">
         What Our Clients Say
       </h1>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center tracking-tighter text-gray-600 max-w-2xl mt-2 mx-auto">
         Don't just take our word for it - hear from the families who have found their dream homes with us.
       </p>
       
       <!-- Swiper Container -->
-      <div class="swiper testimonial-swiper max-w-4xl mx-auto">
+      <div class="swiper testimonial-swiper max-w-4xl mt-5 mx-auto">
         <div class="swiper-wrapper">
           <!-- Testimonial 1 -->
           <div class="swiper-slide">
@@ -127,44 +127,5 @@ export function loadTestimonials() {
       </div>
     </div>
   </section>
-  
-  <style>
-    /* Core Swiper functionality */
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-    
-    .swiper-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      transition-property: transform;
-      box-sizing: content-box;
-    }
-    
-    .swiper-slide {
-      flex-shrink: 0;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transition-property: transform;
-    }
-    
-    /* Custom arrows using Unicode */
-    .testimonial-swiper .swiper-button-next::after {
-      content: '→';
-      font-size: 20px;
-      color: #374151;
-    }
-    
-    .testimonial-swiper .swiper-button-prev::after {
-      content: '←';
-      font-size: 20px;
-      color: #374151;
-    }
-  </style>
   `
 }
