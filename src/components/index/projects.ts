@@ -2,13 +2,13 @@ export function loadProjects() {
   document.querySelector("#projects")!.innerHTML = `
   <section id="Projects" class="h-full bg-gray-100 py-20 px-6">
     <div class="max-w-7xl mx-auto p-5 pb-10 bg-gray-50 rounded-xl shadow-lg">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+      <h1 class="font-playfair text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tighter">
         Our Projects
       </h1>
-      <p class="pt-1 text-sm lg:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam, sapiente tempore laborum ipsa alias nostrum doloribus eveniet ratione quas fugiat exercitationem, quia, nam facilis?
+      <p class="pt-1 text-sm lg:text-lg tracking-tighter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sint ipsam, nam fugiat ad consequuntur natus culpa. Neque, aperiam sint consequuntur ipsam, recusandae ratione cupiditate ea iure est placeat eum dolor nobis magnam dignissimos aliquid tenetur illo quo non tempora ab temporibus! Dolores cupiditate dolore, omnis commodi quia reiciendis, quod, sequi ea laboriosam iste ab alias sunt sapiente eaque. Eius!
       </p>
-      <div class="pt-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 place-items-center">
+      <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 place-items-center">
         <div class="h-[500px] w-full max-w-80 bg-gray-300 rounded-xl shadow-lg">
         </div>
         <div class="h-[500px] w-full max-w-80 bg-gray-300 rounded-xl shadow-lg">
