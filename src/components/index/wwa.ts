@@ -7,7 +7,7 @@ export function loadWhoWeAre() {
           Who We Are
         </h1>
         <p class="text-gray-700 text-lg max-w-3xl mt-2 mx-auto leading-relaxed tracking-tight">
-          At Homes By Tatteras LLC, we're more than just real estate professionals – we're your trusted partners in finding the perfect place to call home.
+          At Homes By Hatteras LLC, we're more than just real estate professionals – we're your trusted partners in finding the perfect place to call home.
         </p>
       </div>
       <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -23,7 +23,7 @@ export function loadWhoWeAre() {
           </p>
         </div>
         <div class="bg-gray-300 rounded-xl shadow-md h-80 w-full">
-          <img src="/photos/team-photo.jpg" alt="Homes By Tatteras Team" class="w-full h-full object-cover rounded-xl">
+          <img src="/photos/team-photo.jpg" alt="Homes By Hatteras Team" class="w-full h-full object-cover rounded-xl">
         </div>
       </div>
       <div class="text-center mt-12">
