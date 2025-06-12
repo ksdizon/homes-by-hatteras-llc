@@ -24,7 +24,6 @@ export function loadTestimonials() {
                 "Working with Homes By Tatteras was an absolute dream. They understood exactly what we were looking for and helped us find the perfect home for our growing family. The entire process was smooth and professional."
               </p>
               <div class="flex items-center justify-center">
-                <div class="w-12 h-12 bg-slate-200 rounded-full mr-4"></div>
                 <div>
                   <h4 class="font-semibold text-slate-800">Sarah & Michael Johnson</h4>
                   <p class="text-gray-500 text-sm">First-time Homebuyers</p>
@@ -45,7 +44,6 @@ export function loadTestimonials() {
                 "I've bought and sold several properties over the years, but never had such a seamless experience. The team's attention to detail and market knowledge is unmatched. Highly recommended!"
               </p>
               <div class="flex items-center justify-center">
-                <div class="w-12 h-12 bg-slate-200 rounded-full mr-4"></div>
                 <div>
                   <h4 class="font-semibold text-slate-800">Robert Chen</h4>
                   <p class="text-gray-500 text-sm">Real Estate Investor</p>
@@ -66,7 +64,6 @@ export function loadTestimonials() {
                 "From our first meeting to closing day, Homes By Tatteras exceeded every expectation. They made what could have been a stressful process feel effortless. We couldn't be happier with our new home!"
               </p>
               <div class="flex items-center justify-center">
-                <div class="w-12 h-12 bg-slate-200 rounded-full mr-4"></div>
                 <div>
                   <h4 class="font-semibold text-slate-800">Emily Rodriguez</h4>
                   <p class="text-gray-500 text-sm">Young Professional</p>
@@ -87,7 +84,6 @@ export function loadTestimonials() {
                 "As retirees looking to downsize, we had very specific needs. The team listened carefully and found us the perfect condo with all the amenities we wanted. Their patience and expertise made all the difference."
               </p>
               <div class="flex items-center justify-center">
-                <div class="w-12 h-12 bg-slate-200 rounded-full mr-4"></div>
                 <div>
                   <h4 class="font-semibold text-slate-800">David & Linda Williams</h4>
                   <p class="text-gray-500 text-sm">Retirees</p>
@@ -108,7 +104,6 @@ export function loadTestimonials() {
                 "Moving to a new city was daunting, but Homes By Tatteras made it feel like home from day one. They went above and beyond to help us understand the neighborhoods and find the perfect fit for our lifestyle."
               </p>
               <div class="flex items-center justify-center">
-                <div class="w-12 h-12 bg-slate-200 rounded-full mr-4"></div>
                 <div>
                   <h4 class="font-semibold text-slate-800">Jessica Martinez</h4>
                   <p class="text-gray-500 text-sm">Corporate Relocator</p>
