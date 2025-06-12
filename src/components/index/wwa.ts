@@ -1,7 +1,8 @@
 export function loadWhoWeAre() {
   document.querySelector("#who-we-are")!.innerHTML = `
   <section id="who-we-are-section" class="h-full bg-white py-20 px-6">
-    <div class="max-w-7xl mx-auto p-8 bg-gray-50 rounded-xl shadow-lg transform translate-x-full opacity-0 transition-all duration-1000 ease-out" id="slide-container">      <div class="text-center">
+    <div class="max-w-7xl mx-auto p-8 bg-gray-50 rounded-xl shadow-lg">
+      <div class="text-center">
         <h1 class="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-slate-800 tracking-tighter">
           Who We Are
         </h1>
@@ -9,7 +10,6 @@ export function loadWhoWeAre() {
           At Homes By Tatteras LLC, we're more than just real estate professionals – we're your trusted partners in finding the perfect place to call home.
         </p>
       </div>
-
       <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <h2 class="font-playfair text-xl md:text-2xl font-semibold text-slate-800">
@@ -26,7 +26,6 @@ export function loadWhoWeAre() {
           <img src="/photos/team-photo.jpg" alt="Homes By Tatteras Team" class="w-full h-full object-cover rounded-xl">
         </div>
       </div>
-
       <div class="text-center mt-12">
         <p class="text-gray-600 mb-6 text-lg">
           Ready to start your real estate journey with us?
@@ -37,26 +36,5 @@ export function loadWhoWeAre() {
       </div>
     </div>
   </section>
-  `
-   const slideContainer = document.getElementById('slide-container');
-  
-  if (slideContainer) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Trigger the slide-in animation when element comes into view
-          entry.target.classList.remove('translate-x-full', 'opacity-0');
-          entry.target.classList.add('translate-x-0', 'opacity-100');
-          
-          // Stop observing once animated (optional - remove if you want it to animate every time)
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2, // Trigger when 20% of the element is visible
-      rootMargin: '0px 0px -50px 0px' // Start animation 50px before element fully enters viewport
-    });
-    
-    observer.observe(slideContainer);
-  }
+`
 }
