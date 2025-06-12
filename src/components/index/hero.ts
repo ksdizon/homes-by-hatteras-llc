@@ -10,9 +10,9 @@ export function loadHero() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, deleniti?
       </p>
       
-      <button class="bg-white text-slate-900 px-5 py-2 rounded-xl font-semibold text-base tracking-wide shadow-xl hover:bg-amber-50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <a href="#who-we-are" class="bg-white text-slate-900 px-5 py-2 rounded-xl font-semibold text-base tracking-wide shadow-xl hover:bg-amber-50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
         Explore
-      </button>
+      </a>
     </div>
   </section>
   `
